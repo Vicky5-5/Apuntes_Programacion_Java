@@ -1,0 +1,27 @@
+TIPOS DE DATOS
+
+- Enteros.
+  --> Int: 4 bytes de espacio para almacenamiento (en la memoria RAM). Número enteros. Por ejemplo: 15. Desde -2,147,483,648 hasta 2,147,483,647
+  --> Short: 2 Bytes de espacio del almacenamiento. Desde -32,768 hasta 32,767.
+  --> Long: 8 bytes de espacio para almacenamineto. Muchos números.
+  --> Byte 1 Byte de espacio para almmacenamiento. Desde -128 hasta 127.
+
+- Coma flotante (decimales)
+  --> Float: 4 bytes de espacio para almacenamiento. De 6 a 7 cifras decimales. Sufijo F.
+  --> Double: 8 butes de espacio para almacenamiento. Aproximadamente 15 cifras decimales.
+
+- Char: para representar caracteres.
+- Boolean: 2 únicos valores. True/false
+
+Definición de variable: *Espacio en la memoria del ordenador* donde se almacenará un valor que podrá cambiar durante la ejecución del programa.
+
+A la hora de crear un programa surge la necesidad de guardar datos temporalmente que se usarán en el futuro.
+
+Para crear una variable primero el tipo y después el nombre que quieras. Ejemplos: 
+  --> int numero;
+  --> int dinero = 45;
+
+- Inferencia de tipos.
+
+  --> Es una característica que permite deducir el tipo de una variable en una función del valor que se le asigna, sin que el programador tenga que especificarlo explícitamente. El compilador analiza el valor asignado y deduce el tipo adecuado.
+      Ejemplo: var edad = 35;
