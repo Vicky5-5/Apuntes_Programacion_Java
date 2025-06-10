@@ -1,1 +1,13 @@
+IMPORTANTE: que el paquete (package) tenga un nombre.
 
+Primero declarar variable, darle un valor y ya podríamos hacer un System.out.println(...) (por ejemplo)
+Ejemplo:
+
+int edad = 34; //Si no se pone un valor --> variable edad might not have been initialized
+
+System.out.println(edad);
+
+Dentro del main se lee de arriba a abajo.
+
+//Esto es para comentar
+/*También para comentar, pero este funciona para varias líneas*/
