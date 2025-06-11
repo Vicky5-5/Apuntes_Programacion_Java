@@ -1,0 +1,76 @@
+- Un tipo entero tiene que guardar un tipo entero. Ejemplo:
+
+  --> int edad = "hola"; //Esto está mal ya que si o si tiene que ser un entero
+
+- Es importante inicializar una variable para una operación
+
+      //Mal
+  --> int edad;
+      double media = edad/2;
+      edad = 20;
+
+      //Bien
+  --> int edad = 20;
+      double media = edad/2;
+
+***********OPERADORES*************
+--> ARITMÉTICOS
+
++: Suma
+-: Resta
+*: Multiplicación
+/: División
+%: módulo --> devuelve el resto de una división
+    -->Ejemplo:
+    double num1 = 7;
+    double num2=3;
+    
+    System.out.println(num1%num2);
+
+Se imprime --> 1.0
+
+double resultado = (int)num1/num2; //Esto es un casting. Pasamos el resultado a entero
+
+**NOTA 1**
+Para que Java te de el resultado en decimales, uno de lo valores/operando tiene que ser un double
+--> LÓGICOS, RELACIONALES Y BOOLEANOS
+
+>: Mayor que
+<: Menor que
+>=: Mayor igual que
+<=: Menor igual que
+!=: Distinto que
+==: igual que
+&&: y lógico --> en un condicional que es que se tienen que cumplir los dos requisitos. Compara valores. String no
+    --> Ejemplo:
+        int nota = 3;
+        if(nota>0 && nota<5){
+        Sustem.out.println("Estás suspenso");
+        }
+        System.out.println("Estás aprobado");
+||: o lógico --> si se cumplen una de las dos condiciones se cumple lo de dentro. Compara valores. String no
+    --> Ejemplo:
+        int nota = 6;
+        if(nota>5||nota<10){
+        System.out.println("Aprobaste");
+        }
+**NOTA 2**
+Si ves esto "<>" es un "distinto que" usado en Visual Basic, en SQL, Python.
+
+--> INCREMENTO Y DECREMENTO
+++: Incremento
+--: Decremento
++=nº: Incremento
+-=nº: decremento
+
+--> Concatenación (textos y números)
+
++: une o concatena
+
+    --> Ejemplo:
+
+    String nombre= "Pablo";
+    int edad = 20;
+    System.out.println("Hola " + nombre + ". Con edad " + edad + " años.");
+
+Se imprime --> Hola Pablo. Con edad 20 años.
