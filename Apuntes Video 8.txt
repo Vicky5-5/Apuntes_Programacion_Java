@@ -1,0 +1,13 @@
+- Declaración múltiple de variables. Mismo tipo y distintos nombres
+
+  --> int num1, num2, num3;
+
+- Si está subrayado la varibale no es usada
+
+- Una constante permanece fijo desde el principio hasta el final. Se reserva un espacio de memoria y tendrá siempre ese valor
+
+  --> final int ejemplo=34;
+      ejemplo = 5; //Dará error puesto que está el final, que es una constante --> unresolved compilation problem
+  **NOTA**
+El "final" puede ser muy útil, por ejemplo, para cálculo de área. También puede ser en conversión como de pulgadas a centímetros.
+    Ejemplo: final double pi=3.14;
