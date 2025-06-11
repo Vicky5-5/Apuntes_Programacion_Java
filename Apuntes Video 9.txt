@@ -1,0 +1,17 @@
+**PROMOCIÓN DE TIPOS EN JAVA**
+
+- Si una operación involucra un tipo menor a int (bye, short, char), se promueve a int antes de realizar la operación.
+
+    --> Ejemplo:
+        byte num1 = 35;
+        byte num2 = 15;
+        byte resultado = num1 + num2;
+        Sytem.out.println(resultado);
+
+    //En un principio da error, por lo tanto, para imprimir el resultado, tiene que castear --> byte reusltado = (int) num1 + num2;
+
+- Si en una operación involucra un int y un long, el resultado es long.
+
+- Si involucra un float, el resultado es float.
+
+- Si involucra un double, el resultado es double
