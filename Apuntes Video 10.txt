@@ -1,0 +1,19 @@
+- Para calcular la raíz de un número usamos Math.sqrt(double);. Si se mete un entero dará error puesto que "Math.sqrt()" devuelve Double. En este caso tendríamos que hacer un casting siempre y cuando los tipos sean compatibles.
+    *Ejemplo del casting del entero. Es el (int)*
+    int raiz = (int)Math.sqrt(9)
+    System-out.println(raiz);
+
+  --> Si está de la siguiente forma no hace falta castear
+      double raiz = Math.sqrt(9);
+      System-out.println(raiz);
+
+- En el caso de hacer el siguiente ejemplo donde el resultado no es un entero se pierde informarción.
+    
+      int raiz = (int)Math.sqrt(10);
+      System-out.println(raiz);
+      SE IMPRIME --> 3
+      SI FUESE CON EL DOUBLE (COMO TIENE QUE SER) --> 3,1622776601683795
+
+
+EL CASTING ES UNA CONVERDIÓN DE TIPO EXPLÍCITA --> DE MÁS GRANDE A MÁS PEQUEÑO
+JAVA LO HACE IMPLICITO --> DE MÁS PEUQEÑO A MÁS GRANDE
