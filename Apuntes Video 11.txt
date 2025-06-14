@@ -1,0 +1,37 @@
+**CLASES MATH POW**
+- se encarga de elevar un número con un potencia. En el ejemplo siguiente el 5 se eleva al cubo (3). El Pow le pasa lo mismo que al sqrt, para que devuelva un entero tiene que castear ya que desvolvería de normal un double
+    int potencia = (int)Math.pow(5,3);
+
+**CLASE BIGINTEGER**
+- Para exponenciales más grandes usamos BigInteger. Este paquete se tiene que importar (java.math.BigInteger)
+  BigInteger base = BigInteger.valueOf(25);
+  int exponente = 25;
+//elevamos la base (25) por 25. Este elemento pow pertenece a la clase BigInteger, no a la clase Math (este último es static)
+  BigInteger potencia 0 base.pow(exponente);
+  System.out.println(potencia);
+
+**CLASE RANDOM**
+- Nos crea un número aleatorio. Nos devuelve un valor double y es static
+    //Aquí te genera número pseudoaletorios entre 0 y 1
+    double aleatorio = Math.random(aleatorio);
+    //para que esté entre dos números, por ejeplo entre 0 a 100, se multiplica
+    double aleatorio = Math.random(aleatorio)*100;
+    int aleatorio = (int)Math.random(aleatorio)*100;
+
+- Para que redondee usamos el método Round. hay que tener ciudaddo ya que puede devolver o un floar o un int
+
+    int aleatorio = Math.round((float)(Math.random()*100));
+
+- Con abs devuelve el valor absoluto de un número sin importar su signo será positivo.
+
+    int absoluto = Math.abs(-45)
+
+- El método max devuleve el mayor número
+
+    int mayor = Math.max(3,7);
+      System.out.println(mayor);
+    //Devuelve el 7
+
+
+**SOBRECARGA DE MÉTODOS**
+- Dos métodos del mismo nombre que reciben y devuelven distintos parámetros
