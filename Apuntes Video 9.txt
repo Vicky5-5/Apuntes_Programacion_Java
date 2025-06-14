@@ -15,3 +15,15 @@
 - Si involucra un float, el resultado es float.
 
 - Si involucra un double, el resultado es double
+
+**Clase en Java**
+
+- Propias.
+
+-Predefinidas. Ejemplos: String, Math, Array, Thread
+    --> Organización API Java
+        --> Se organizan en módulos y dentro de ellos hay paquetes, que a su vez tienen clases. Las clases contienen *Métodos* y *Atributos*
+
+Link documentación: https://docs.oracle.com/en/java/
+**NOTA** 
+Todo esto es relativo a la versión 9 de Java
