@@ -1,0 +1,44 @@
+- La clase String no es un tipo primitivos.
+- Al declararla SIEMPRE con la S mayúscula ya que Java es Key Sensitive. El C# puedes declararla tanto en minúscula como en mayúscula. En el siguiente ejemplo "nombre" es un objeto (instacia, ejemplar) de la clase String
+      string nombre="Juan"; --> Dará error
+      String nombre = "Juan"; --> Está bien
+- Métodos más usados de la clase String:
+  --> length(): devuelve la longitud de una cadena de caracteres
+
+    String nombre = "Paco";
+		
+		var resultado = nombre.length();
+    //TAMBIÉN SE  PUEDE HACER ESTO, PERO SI SOLO LO QUIERES VER EN CONSOLA, DEPENDE DEL ESCENARIO -->	System.out.println("Mi nombre tiene "+nombre.length() + " letras");
+
+		System.out.println(resultado); //Si se va a usar más adelante la variable resultado, usar este método
+
+    DEVUELVE --> 4
+  --> charAt(): devuelve la POSICION DE  UN CARÁCTER dentro de una cadena. (Las posiciones empiezan a contar de 0)
+
+    String nombre = "Paco";
+    System.out.println("La primera letra es "+ nombre.charAt(0));
+    System.out.println("La última letra es " + nombre.charAt(nombre.length()-1));
+
+  --> substring(x,y): devuelve una subcadena dentro de una cadena, siendo X el carácter a partir del cuál se extrae e Y el nº de caracteres que se quire extraer. La primera letra es 0
+        String frase = "Hola mundo";
+    		System.out.println(frase.substring(0, 5) + "- " + frase.substring(5, 10)); // El primer Substring extrae el hola hasta el espacio y el segundo extrae el mundo
+
+        DEVUELVE --> Hola - mundo
+  --> equals(cadena): devuelve true si dos cadenas que se comparan son iguales y false si no los son. Distingue mayúsculas y minúculas.
+    //EL RESULTADO SERÁ TRUE
+    String nombre = "Paco";
+    String nombre2 = "Paco";
+
+    System.out.println(nombre.equals(nombre2));
+    //EL RESULTADO SERÁ FALSE
+    String nombre = "Paco";
+    String nombre2 = "paco";
+
+    System.out.println(nombre.equals(nombre2));
+
+  --> equalsIgnoreCase(cadena): igual que el anterior pero éste no tiene en cuenta las mayúsculas y minúsculas 
+
+    String nombre = "Paco";
+    String nombre2 = "paco";
+
+		System.out.println(nombre.equalsIgnoreCase(nombre2));
