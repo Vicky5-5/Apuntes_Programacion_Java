@@ -1,0 +1,16 @@
+**ORGANIZACIÓN API JAVA**
+
+- API Java.Módulos. Son los primero en la jerarquía:
+    --> Encapsulación fuerte
+    --> Reducción del tamaño de aplicaciones. Hace que solo incluya todo lo que usamos que necesitemos para la aplicación
+    --> Mejor organización del código
+    --> Mayor seguridad
+    --> Mejor rendimiento
+    --> no tiene anidamineto, tiene dependencias. Son Submodulos
+- API Java.Paquetes:
+    --> Organizan las clase
+    --> Evita los conflictos de nombre
+    --> Controla la visibilidad de las clases
+    --> Hay muchos tipos de paquetes, pero el principal es *Java.lang*
+    --> Con "java.import.*" importamos todos los paquetes
+    -> Tiene anidamineto
