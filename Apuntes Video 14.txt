@@ -1,0 +1,28 @@
+**ENTRADA Y SALIDA DE DATOS I. CLASE SCANNER**
+
+  - Se necesita importar la clase Scanner
+
+package Practicas;
+import java.util.Scanner;
+
+public class InsertarPorTeclado {
+    
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Escriba algo: ");
+        String algo = teclado.nextLine();
+        
+        System.out.println("Has escrito "+ algo);
+
+        System.out.println("Escriba otra cosa: ");
+        String otro = teclado.nextLine();
+        
+        System.out.println("Has escrito "+ algo + " y " + otro);
+        teclado.close();
+	}
+
+}
+ **IMPORTANTE**
+NO NOMBRES A TU CLASE SCANNER YA QUE JAVA LO CONFUNDE CON JAVA.UTIL.SCANNER
