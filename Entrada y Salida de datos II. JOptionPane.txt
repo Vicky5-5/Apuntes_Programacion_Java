@@ -1,0 +1,18 @@
+**JOptionPane**
+- La clase JOptionPane pertenece al javax.swing.*;
+
+package Practicas;
+import javax.swing.*;
+public class EntradaDatos2 {
+
+	public static void main(String[] args) {
+
+		String nombre = JOptionPane.showInputDialog("Introduce el nombre: "); //ShowInputDialog devuelve un String, por eso con los enteros da error
+		//Para que vaya bien el JOptionPane y acepte los int tenemos que parsearlos.
+		//Así, si queremos operar, lo podemos hacer sin problemas. Lo mismo pasa con los double, que sería parseDouble
+		int edad = Integer.parseInt(JOptionPane.showInputDialog("Instroduce tu edad: "));
+	
+	System.out.println("Te llamas " + nombre + " y tienes " + edad);
+	}
+
+}
