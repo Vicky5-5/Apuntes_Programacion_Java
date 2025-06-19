@@ -1,0 +1,30 @@
+package PracticasPruebas;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class EjerRecopilatorio {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int intentos = 0;
+		int aleatorio = (int)(Math.random()*100) +1; //Numero random del 1 al 10
+		System.out.println("Inserte un número");
+		int num = teclado.nextInt();
+		
+		while(aleatorio != num) {
+			intentos++;
+
+			if(aleatorio < num) {
+			System.out.println("El numero es pequeño. Inserta de nuevo: ");
+			num = teclado.nextInt();
+			}else {
+				System.out.println("El numero es mayor. Inserta de nuevo: ");
+				num = teclado.nextInt();
+			}
+		}
+		System.out.println("¡Has acertado! Han sido: " + intentos + " intentos");
+		teclado.close();
+	}
+
+}
