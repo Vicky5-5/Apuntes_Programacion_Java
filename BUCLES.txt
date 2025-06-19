@@ -1,0 +1,32 @@
+- Bucles indeterminados. Sin ejecutar el programa no sabes cuántas veces se va a ejecutar el código de dentro del bucle
+  --> while
+  --> do - while
+
+- Bucles determinados. Lo contrario al indeterminado
+
+  --> for
+  --> for each
+
+*******WHILE******
+
+package PracticasPruebas;
+
+import javax.swing.JOptionPane;
+
+public class usoWhile {
+
+	public static void main(String[] args) {
+
+		String usuario = "Hola";
+		String password ="";
+			while(usuario.equals(password)==false) {
+				password = JOptionPane.showInputDialog("Introduce la contraseña: ");
+			
+			if(usuario.equals(password)==false) System.out.println("Contraseña incorrecta.");
+			
+			}
+			System.out.println("Acceso correcto");
+				
+	}
+
+}
