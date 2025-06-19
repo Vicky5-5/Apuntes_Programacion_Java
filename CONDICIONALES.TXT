@@ -199,8 +199,13 @@ public class Switch2 {
 		
 		case "Sábado", "Domingo" -> "Festivo";
 
-		default -> "No válido";
+		default -> {
+			
+			
+			System.out.println("Procesando...");
+			yield "No válido"; //devuelve el resultado como no válido
 		
+		}
 		};
 		
 		System.out.println(resultado);
