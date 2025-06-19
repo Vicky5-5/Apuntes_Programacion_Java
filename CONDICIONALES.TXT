@@ -62,10 +62,151 @@ public class Condicionales {
 		if(edad<18) System.out.println("Eres menor de  edad");
 		if(edad>=18) System.out.println("Eres mayor de edad");
     if(edad>=25) System.out.println("Eres Adulto joven"); //Si el número introducido es mayor o igual a 25 también se ejecutará, así que haría falta un else
+	teclado.close(); //Hay que cerrarlo es scanner
+/*Si pones, por ejemplo, int edad2 = teclado.nextInt(); dará error puesto que java ejecuta de arriba a abajo puesto que el teclado está cerrado*/
+/*Habría que abrir otro scanner*/
+
+System.setIn(...) --> para establecer la entrada por defecto del sistema en vez de, en nuestro caso, del Scanner y podríamos abrir un scanner sin problema
+	}
+
+}
+
+******EJEMPLO CON LOS ELSE******
+
+import java.util.Scanner;
+
+public class Condicionales {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Introduce tu edad");
+		int edad = teclado.nextInt();
+		
+		if(edad<18) System.out.println("Eres menor de  edad");
+		else if(edad>=18) System.out.println("Eres mayor de edad");
+    		else if(edad>=25) System.out.println("Eres Adulto joven"); //Si el número introducido es mayor o igual a 25 también se ejecutará, así que haría falta un else
+	teclado.close(); //Hay que cerrarlo es scanner
 
 	}
 
 }
 
-EJEMPLO CON LOS ELSE
+
+****TERNARIO*****
+
+package PracticasPruebas;
+
+import java.util.Scanner;
+
+public class ternarios {
+
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	
+	System.out.println("Introduce tu edad: ");
+	int edad = teclado.nextInt();
+	
+	/*if (edad <18 ) System.out.println("Eres menor de edad");
+	else System.out.println("Eres mayor de edad");*/
+	
+	//Eres menor de edad si no eres mayor de edad. Es útil para if else simples
+	String resultado = (edad < 18)? "Eres menor de edad":"Eres mayor de edad"; --> esto es el ternario
+	System.out.println(resultado);
+	}
+}
+
+****SWITCH CASE****
+
+package PracticasPruebas;
+
+import java.util.Scanner;
+
+public class switch_Case {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Introduce el numero de mes: ");
+		int numMes = teclado.nextInt();
+		
+		switch(numMes) { //variable que usaremos
+		case 1:
+			System.out.println("Enero");
+			break;
+		case 2:
+			System.out.println("Febrero");
+			break;
+		case 3:
+			System.out.println("Marzo");
+			break;
+		case 4:
+			System.out.println("Abril");
+			break;
+		case 5:
+			System.out.println("Mayo");
+			break;
+		case 6:
+			System.out.println("Junio");
+			//puedes poner una función si la quieres ejecutar en cualquier case
+			break;
+		case 7:
+			System.out.println("Julio");
+			break;
+		case 8:
+			System.out.println("Agosto");
+			break;
+		case 9:
+			System.out.println("Septiembte");
+			break;
+		case 10:
+			System.out.println("Octubre");
+			break;
+		case 11:
+			System.out.println("Noviembre");
+			break;
+		case 12:
+			System.out.println("Diciembre");
+			break;
+		default:
+			System.out.println("No existe");
+		break;
+		}
+	}
+
+}
+
+******OTRA FORMA DE USAR EL SWITCH*************
+
+package PracticasPruebas;
+
+import java.util.Scanner;
+
+public class Switch2 {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Introduce el día de la semana");
+		String dia = teclado.nextLine();
+		
+		String resultado = switch(dia) {
+		//Si devuleven los mismos valores se pueden abreviar
+		case "Lunes", "Martes", "Miércoles", "Jueves", "Viernes" -> "Laborable";
+		
+		case "Sábado", "Domingo" -> "Festivo";
+
+		default -> "No válido";
+		
+		};
+		
+		System.out.println(resultado);
+		teclado.close();
+	}
+
+}
+
 
