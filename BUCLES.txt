@@ -30,3 +30,37 @@ public class usoWhile {
 	}
 
 }
+******DO - WHILE *******
+- Nos aseguramos que el código se ejecute una vez
+
+package PracticasPruebas;
+
+import java.util.Scanner;
+
+public class Do_whileUso {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int intentos = 0;
+		int aleatorio = (int)(Math.random()*100); //Numero random del 1 al 10
+		//Esto puede dar problemas pues que puede dar 0, por eso usamos do-while
+		// para que al menos nos pase por el bucle una vez
+		System.out.println("Inserte un número del 0 al 99");
+		int num = teclado.nextInt();
+		
+		do {
+			intentos++;
+
+			if(aleatorio < num) {
+			System.out.println("El numero es pequeño. Inserta de nuevo: ");
+			num = teclado.nextInt();
+			}else {
+				System.out.println("El numero es mayor. Inserta de nuevo: ");
+				num = teclado.nextInt();
+			}
+		}while(aleatorio != num);
+		System.out.println("¡Has acertado! Han sido: " + intentos + " intentos");
+		teclado.close();
+	}
+
+}
