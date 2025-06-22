@@ -1,0 +1,42 @@
+- Array es una estructura de datos que contiene una colección de valores del mismo tipo. Todo que sea int, todo que sea double. Sin mezclar tipos.
+
+- Sirven para alamcenar valores qie normalmente tiene alguna relación entre sí
+
+Sintaxis:
+
+int[] array = new int[10]; --> tipo de array (int) con su nombre y se inicializa new y el tipo con cuantos datos va a almacenar, en sete caso 10 valores. Se empieza a contar desde 0
+
+*****EJEMPLO*****
+
+package Practicas;
+
+import java.lang.reflect.Array;
+
+public class ArrayUsos {
+
+	public static void main(String[] args) {
+
+		/*UNA FORMA DE HACERLO
+		 * 
+		 * int[] numeros = new int[5];
+		numeros[0]=6;
+		numeros[1]=33;
+		numeros[2]=1;
+		numeros[3]=11;
+		numeros[4]=2;
+		
+		for(int i=0;i<numeros.length;i++) {
+			System.out.println("Valor del indice "+i+" igual a "+numeros[i]);
+		}
+		*/
+
+		//OTRA FORMA DE HACERLO
+		
+		int [] miArray = {6,33,1,11,2};
+		
+		for(int i=0;i<miArray.length;i++) {
+			System.out.println("Valor del indice "+i+" igual a "+miArray[i]);
+		}
+	}
+
+}
