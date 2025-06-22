@@ -1,0 +1,22 @@
+- Sabemos cuantas veces se va a ejecutar
+  --> Sintaxis
+for(inicio del bucle; condición; contador bucle){
+lineas
+}
+
+EJEMPLO SIMPLE
+
+package Practicas;
+
+public class bucleFor {
+
+	public static void main(String[] args) {
+
+		//se va a repetir hasta que i sea menor a 10. Siempre se comienza a contar de 0 en este caso
+		for (int i=0;i<10;i++) {
+			System.out.println("Vicky");
+
+		}
+	}
+
+}
