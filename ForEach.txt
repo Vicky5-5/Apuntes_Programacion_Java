@@ -1,0 +1,45 @@
+*****USO SIMPLE*******
+
+package Practicas;
+
+public class UsoForeach {
+	public static void main(String[] args) {
+
+		/*String[] paises = new String[8];
+		paises[0]="España";
+		paises[1]="Italia";
+		paises[2]="Rusia";
+		paises[3]="Alemania";
+		paises[4]="Inglaterra";
+		paises[5]="Irlanda";
+		paises[6]="Bélgica";
+		paises[7]="México";*/
+		
+		String[]paises = {"España","México", "Rusia"};
+		//tipo de varieable for (:) array a recorres (paises)
+		//No habría que modificar el foreach, solo el array
+		for(String item : paises) {
+			System.out.println("País: "+ item);//Imprimimos lo que hay en el array
+		}
+	}
+}
+
+******CON JOPTIONPANEL******
+
+	String []paises=new String[9];
+		
+		for(int i=0;i<9;i++) {
+			paises[i] = JOptionPane.showInputDialog("Intoduce País");
+		}
+		for(String item : paises) System.out.println("País: " + item);
+
+******NÚMEROS ALEATORIOS********
+
+int []aleatorio = new int [200];
+		
+		for(int i=0;i<aleatorio.length;i++) {
+			aleatorio[i] = (int)(Math.random()*100);
+		}
+		for(int resultado : aleatorio) {
+			System.out.print("Número "+resultado+", ");
+		}
