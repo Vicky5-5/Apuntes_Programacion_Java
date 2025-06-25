@@ -1,0 +1,36 @@
+- Ejemplo
+
+int [][] nombre = new int[5][3]; --> Estoy tendría cinco columnas y tres filas
+
+*****CODIGO*****
+
+package Practicas;
+
+public class ArraysBidimensionales {
+
+	public static void main(String[] args) {
+
+		int [][] matriz= new int [3][3];
+		
+		//Forma de verlo visualmente y más claro
+		
+		matriz[0][0] =45;
+		matriz[0][1] =5;
+		matriz[0][2] =34;
+		
+		matriz[1][0] =1;
+		matriz[1][1] =431235;
+		matriz[1][2] =4235;
+		
+		matriz[2][0] =4555;
+		matriz[2][1] =55;
+		matriz[2][2] =000;
+
+		for (int i=0;i<matriz.length;i++) {
+			for(int j=0;j<matriz.length;j++) {
+				System.out.println("Numero: " + matriz[i][j]);
+			}
+		}
+	}
+
+}
